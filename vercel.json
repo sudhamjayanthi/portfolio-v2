@@ -6,7 +6,7 @@
             "permanent": true
         },
         {
-            "source": "/_hive/*",
+            "source": "/_hive/:splat",
             "destination": "https://hive.splitbee.io/:splat",
             "permanent": true
         }
