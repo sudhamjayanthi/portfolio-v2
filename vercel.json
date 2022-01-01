@@ -3,12 +3,12 @@
         {
             "source": "/bee.js",
             "destination": "https://cdn.splitbee.io/sb.js",
-            "statusCode": 200
+            "permanent": true
         },
         {
-            "source": "/_hive/:splat",
+            "source": "/_hive/*",
             "destination": "https://hive.splitbee.io/:splat",
-            "statusCode": 200
+            "permanent": true
         }
     ]
 }
