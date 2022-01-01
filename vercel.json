@@ -6,7 +6,7 @@
             "statusCode": 200
         },
         {
-            "source": "/_hive/*",
+            "source": "/_hive/:splat",
             "destination": "https://hive.splitbee.io/:splat",
             "statusCode": 200
         }
