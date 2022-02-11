@@ -33,7 +33,11 @@
             content="16yo high school student tinkering with code & preparing for college entrance exams.">
         <meta name="twitter:image" content="https://cdn.statically.io/img/sudham.tk/f=auto/images/embed.png">
 
+        <!-- production -->
         <link rel="stylesheet" href="build/prod.css">
+
+        <!-- development -->
+        <!-- <link rel="stylesheet" href="build/tailwind.css">  -->
     </head>
 
     <body>
@@ -43,19 +47,32 @@
             <img src="img/pixelated-sudham.jpg"
                 href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/107182994275036003725225085913603871278098811538801285774611650863337274605569/"
                 class="rounded-2xl h-40 w-40" />
-            <h1 class="text-4xl font-bold mb-5 my-10">sudham jayanthi</h1>
-            <p class="text-md dark:text-gray-300">16yo high school student tinkering with code & preparing for college
-                entrance exams. </p>
-
-            <hr class="my-5 border-gray-300 dark:border-gray-600">
-            <h2 class="text-lg font-semibold ">social</h2>
-            <div class="space-x-2">
-                <a class="relative text-sky-600" href="mailto:hey@sudham.tk">email</a>
-                <a class="relative text-sky-600" href="https://twitter.com/sudhamjayanthi">twitter</a>
-                <a class="relative text-sky-600" href="https://github.com/sudhamjayanthi">github</a>
-               <!--  <a class="relative text-sky-600" href="https://blog.sudham.tk/">blog</a> -->
+            <h1 class="text-4xl mb-5 my-10 font-bold"><span class="text-gray-600 dark:text-gray-400">gm,</span> i'm sudham</h1>
+            <p class="text-md text-gray-700 dark:text-gray-400">a 16 yo high school student <a href="https://sudham.notion.site/My-Builds-513ab4dd0faa43acbee0ce888a5c1aba">built</a> in web2 in the past and exploring web3 rn. shitposting on  <a href="https://twitter.com/sudhamjayanthi">twitter.</a></p>
+             <!-- and ocassionally dumping my thoughts <a href="https://blog.sudham.tk/blog">here!</a></p> -->
+            <hr class="my-5 border-gray-300 dark:border-gray-700">
+            <h2 class="text-lg font-semibold my-2">elsewhere</h2>
+            <div class="social space-x-2">
+                <a href="https://www.linkedin.com/in/sj-/">linkedin</a>
+                <a href="https://github.com/sudhamjayanthi">github</a>
+                <a href="https://twitter.com/sudhamjayanthi">twitter</a>    
+                <a href="mailto:hey@sudham.tk">email</a>
+                <!-- <a onclick="(e) => e.preventDefault(); alert(e.target.text);e.target.text = 'got ya ;)'" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">more</a> -->
+                <a onclick="rickroll(event)">more</a>
             </div>
         </div>
+        <script>
+            let rolled=false
+            function rickroll(e) {
+                if (!rolled) {
+                    e.target.text = "hehehe ;\)"
+                    e.target.style.color = "gray"
+                    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                    rolled=true
+                    e.target['href'] = none
+                }
+            }
+        </script>
 
         <!-- <script>
             projects = [
