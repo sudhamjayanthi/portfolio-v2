@@ -42,21 +42,21 @@
 
     <body>
         <div class="bg-gray-50 h-screen font-inter w-full px-20 py-40 dark:text-white dark:bg-gray-800">
-            <span class="cursor-pointer fixed right-9 top-5"
+            <span data-splitbee-event="switched theme" class="cursor-pointer fixed right-9 top-5"
                 onclick="document.documentElement.classList.toggle('dark')">theme</span>
-            <img src="img/pixelated-sudham.jpg"
-                href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/107182994275036003725225085913603871278098811538801285774611650863337274605569/"
-                class="rounded-2xl h-40 w-40" />
+            <a data-splitbee-event="clicked pfp nft" href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/107182994275036003725225085913603871278098811538801285774611650863337274605569/"
+><img src="img/pixelated-sudham.jpg"
+                    class="rounded-2xl h-40 w-40" /></ a>
             <h1 class="text-4xl mb-5 my-10 font-bold"><span class="text-gray-600 dark:text-gray-400">gm,</span> i'm sudham</h1>
-            <p class="text-md text-gray-700 dark:text-gray-400">a 16 yo high school student <a href="https://sudham.notion.site/My-Builds-513ab4dd0faa43acbee0ce888a5c1aba">built</a> in web2 in the past and exploring web3 rn. shitposting on  <a href="https://twitter.com/sudhamjayanthi">twitter.</a></p>
+            <p class="text-md text-gray-700 dark:text-gray-400">I'm a 16 yo high school student from India. <a data-splitbee-event="clicked secret link" data-splitbee-event-type="builds" href="https://sudham.notion.site/My-Builds-513ab4dd0faa43acbee0ce888a5c1aba">Built</a> in web2 in the past, exploring web3 and building <a data-splitbee-event="clicked secret link" data-splitbee-event-type="habitcult" href="https://twitter.com/habitcultHQ">habitcult.</a></p>
              <!-- and ocassionally dumping my thoughts <a href="https://blog.sudham.tk/blog">here!</a></p> -->
             <hr class="my-5 border-gray-300 dark:border-gray-700">
             <h2 class="text-lg font-semibold my-2">elsewhere</h2>
             <div class="social space-x-2">
-                <a href="https://www.linkedin.com/in/sj-/">linkedin</a>
-                <a href="https://github.com/sudhamjayanthi">github</a>
-                <a href="https://twitter.com/sudhamjayanthi">twitter</a>    
-                <a href="mailto:hey@sudham.tk">email</a>
+                <a data-splitbee-event="clicked social link" data-splitbee-event-socialMedia="linkedin" href="https://www.linkedin.com/in/sj-/">linkedin</a>
+                <a data-splitbee-event="clicked social link" data-splitbee-event-socialMedia="github" href="https://github.com/sudhamjayanthi">github</a>
+                <a data-splitbee-event="clicked social link" data-splitbee-event-socialMedia="twitter" href="https://twitter.com/sudhamjayanthi">twitter</a>    
+                <a data-splitbee-event="clicked social link" data-splitbee-event-socialMedia="email" href="mailto:hey@sudham.tk">email</a>
                 <!-- <a onclick="(e) => e.preventDefault(); alert(e.target.text);e.target.text = 'got ya ;)'" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">more</a> -->
                 <a onclick="rickroll(event)">more</a>
             </div>
@@ -70,6 +70,7 @@
                     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
                     rolled=true
                     e.target['href'] = none
+                    splitbee.track("got rickrolled")
                 }
             }
         </script>
